@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Tutorial for Beginners_ Learn JavaScript in 1 Hour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../header.css" />
+    <style>
+      p {
+        font-family: Roboto, arial;
+        margin-top: 2px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: gray;
+      }
+      .video-container {
+        display: flex;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      .video {
+        flex: 1;
+        width: 500px;
+        transition: all 0.5s ease-in-out;
+        border-radius: 8px;
+      }
+
+      @media (max-width: 500px) {
+        .video {
+          width: 400px;
+        }
+
+        .video-title {
+          font-size: 18px;
+        }
+        .video-container {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .profile {
+          margin-left: 0;
+        }
+        #text {
+          width: 380px;
+          flex: 1;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .video-container {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      @media (min-width: 850px) {
+        .video {
+          flex: 0;
+          border-radius: 10px;
+        }
+        .video-title {
+          font-size: 22px;
+        }
+      }
+
+      .video-title {
+        font-family: Roboto, arial;
+        transition: all 1s ease-in-out;
+      }
+
+      .profile {
+        display: grid;
+        grid-template-columns: 50px 1fr 1fr;
+        width: 300px;
+        padding: 12px;
+        border-radius: 36px;
+        border: 1px solid lightgray;
+        margin-left: 8px;
+      }
+
+      .channel-name {
+        font-family: Roboto, Arial;
+        color: black;
+        font-weight: 800;
+        font-size: 14px;
+        margin-top: 2px;
+        margin-bottom: 4px;
+      }
+
+      .channel-stats {
+        font-family: Roboto, Arial;
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+      }
+
+      .channel-picture > img {
+        width: 36px;
+        border-radius: 50px;
+      }
+
+      .subscribe {
+        margin-top: 4px;
+      }
+
+      .sub-button {
+        background: white;
+        color: black;
+        padding: 8px 14px;
+        border: 1px solid lightgray;
+        border-radius: 16px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .sub-button:hover {
+        background: rgb(84, 84, 84);
+        color: rgb(255, 228, 228);
+      }
+
+      .sub-button:active {
+        background: rgb(173, 173, 173);
+        color: rgb(255, 242, 242);
+      }
+
+      .comment-section {
+        margin-top: 30px;
+        display: flex;
+      }
+
+      .cont {
+        position: relative;
+      }
+
+      .submit {
+        position: absolute;
+        right: 18px;
+        bottom: 18px;
+      }
+
+      .submit > button {
+        padding: 6px 10px;
+        border: 2px double lightgray;
+        border-radius: 16px;
+        cursor: pointer;
+        background-color: lightgray;
+      }
+
+      .submit > button:hover {
+        background-color: rgb(222, 222, 222);
+      }
+
+      .submit > button:active {
+        background-color: rgb(222, 222, 222);
+        opacity: 0.8;
+      }
+
+      .comment-area {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        width: 900px;
+        padding: 2px;
+      }
+
+      .comment {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        font-family: Roboto, arial;
+        font-size: 14px;
+      }
+
+      .comment-container {
+        border: 1px solid lightgray;
+        padding: 18px;
+        border-radius: 8px;
+        margin-bottom: 12px;
+      }
+
+      #text {
+        border-radius: 12px;
+        border: 6px solid lightgray;
+        transition: all 0.5s;
+      }
+
+      #text:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      padding-top: 70px;
+      padding-left: 4px;
+      padding-right: 4px;
+      font-family: Roboto, Arial;
+    "
+  >
+    <div class="header">
+      <div class="left-section">
+        <img src="../icons/hamburger-menu.svg" class="hamburger-menu" alt="" />
+        <a href="../youtube.html">
+          <img src="../icons/youtube-logo.svg" class="youtube-logo" alt="" />
+        </a>
+      </div>
+      <div class="middle-section">
+        <input type="text" class="search-bar" placeholder="Search" />
+        <button class="search-button">
+          <img src="../icons/search.svg" class="search-icon" alt="" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img
+            src="../icons/voice-search-icon.svg"
+            class="voice-search-icon"
+            alt=""
+          />
+          <div class="tooltip">Search with ur vioce</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img src="../icons/upload.svg" alt="" class="upload-icon" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img
+            src="../icons/youtube-apps.svg"
+            alt=""
+            class="youtube-apps-icon"
+          />
+          <div class="tooltip">Youtube Apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img
+            src="../icons/notifications.svg"
+            alt=""
+            class="notifications-icon"
+          />
+          <div class="tooltip">Notifications</div>
+        </div>
+
+        <img
+          src="../profile-pictures/sunnyjoe.jpg"
+          alt=""
+          class="current-profile-picture"
+        />
+      </div>
+    </div>
+    <div class="container">
+      <div class="video-container">
+        <video
+          class="video"
+          controls
+          autoplay
+          loop
+          src="../videos/Python Full Course - Learn Python in 12 Hours _ Python for Beginners [Full Course - 2023] _ Edureka.mp4"
+        ></video>
+      </div>
+      <h2 class="video-title">
+        Python Full Course - Learn Python in 12 Hours _ Python for Beginners
+        [Full Course - 2023] _ Edureka
+      </h2>
+      <p>3.1M views · 2 years ago</p>
+      <div class="profile">
+        <div class="channel-picture">
+          <img src="../profile-pictures/baBackwardsBlue.gif" alt="" />
+        </div>
+        <div class="channel-info">
+          <p class="channel-name">Backwards blue</p>
+          <p class="channel-stats">12m subscribers</p>
+        </div>
+        <div class="subscribe">
+          <button class="sub-button">Subscribe</button>
+        </div>
+      </div>
+
+      <div class="comment-section">
+        <span class="cont">
+          <textarea
+            name=""
+            id="text"
+            cols="50"
+            rows="8"
+            placeholder="Comment in this section"
+          ></textarea>
+          <div class="submit">
+            <button type="submit">Submit</button>
+          </div>
+        </span>
+      </div>
+      <h2>Comments</h2>
+      <div class="comment-container">
+        <div class="comment-area">
+          <div class="channel-picture">
+            <img src="../profile-pictures/baBombBlue.gif" alt="" />
+          </div>
+          <div class="channel-info">
+            <p class="channel-name">Bomb blue</p>
+            <p class="channel-stats">12m subscribers</p>
+          </div>
+        </div>
+        <div class="comment">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsa
+          culpa natus qui sapiente reprehenderit dolorum libero adipisci nam
+          dolores tempora, ex deleniti fuga. Temporibus ipsa cum enim rem autem
+          ducimus quibusdam voluptatibus, ex mollitia?
+        </div>
+      </div>
+      <div class="comment-container">
+        <div class="comment-area">
+          <div class="channel-picture">
+            <img src="../profile-pictures/baBombGreen.gif" alt="" />
+          </div>
+          <div class="channel-info">
+            <p class="channel-name">Bomb Green</p>
+            <p class="channel-stats">12m subscribers</p>
+          </div>
+        </div>
+        <div class="comment">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsa
+          culpa natus qui sapiente reprehenderit dolorum libero adipisci nam
+          dolores tempora, ex deleniti fuga. Temporibus ipsa cum enim rem autem
+          ducimus quibusdam voluptatibus, ex mollitia?
+        </div>
+      </div>
+      <div class="comment-container">
+        <div class="comment-area">
+          <div class="channel-picture">
+            <img src="../profile-pictures/baBombPurple.gif" alt="" />
+          </div>
+          <div class="channel-info">
+            <p class="channel-name">Bomb Purple</p>
+            <p class="channel-stats">12m subscribers</p>
+          </div>
+        </div>
+        <div class="comment">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsa
+          culpa natus qui sapiente reprehenderit dolorum libero adipisci nam
+          dolores tempora, ex deleniti fuga. Temporibus ipsa cum enim rem autem
+          ducimus quibusdam voluptatibus, ex mollitia?
+        </div>
+      </div>
+      <div class="comment-container">
+        <div class="comment-area">
+          <div class="channel-picture">
+            <img src="../profile-pictures/baBackwardsBlue.gif" alt="" />
+          </div>
+          <div class="channel-info">
+            <p class="channel-name">Backwards blue</p>
+            <p class="channel-stats">12m subscribers</p>
+          </div>
+        </div>
+        <div class="comment">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsa
+          culpa natus qui sapiente reprehenderit dolorum libero adipisci nam
+          dolores tempora, ex deleniti fuga. Temporibus ipsa cum enim rem autem
+          ducimus quibusdam voluptatibus, ex mollitia?
+        </div>
+      </div>
+      <div class="comment-container">
+        <div class="comment-area">
+          <div class="channel-picture">
+            <img src="../profile-pictures/baBackwardsGreen.gif" alt="" />
+          </div>
+          <div class="channel-info">
+            <p class="channel-name">Backwards Green</p>
+            <p class="channel-stats">12m subscribers</p>
+          </div>
+        </div>
+        <div class="comment">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsa
+          culpa natus qui sapiente reprehenderit dolorum libero adipisci nam
+          dolores tempora, ex deleniti fuga. Temporibus ipsa cum enim rem autem
+          ducimus quibusdam voluptatibus, ex mollitia?
+        </div>
+      </div>
+      <div class="comment-container">
+        <div class="comment-area">
+          <div class="channel-picture">
+            <img src="../profile-pictures/baBackwardsPurple.gif" alt="" />
+          </div>
+          <div class="channel-info">
+            <p class="channel-name">Bomb Purple</p>
+            <p class="channel-stats">12m subscribers</p>
+          </div>
+        </div>
+        <div class="comment">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsa
+          culpa natus qui sapiente reprehenderit dolorum libero adipisci nam
+          dolores tempora, ex deleniti fuga. Temporibus ipsa cum enim rem autem
+          ducimus quibusdam voluptatibus, ex mollitia?
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

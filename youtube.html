@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Youtube clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="video.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img src="icons/hamburger-menu.svg" class="hamburger-menu" alt="" />
+        <img src="icons/youtube-logo.svg" class="youtube-logo" alt="" />
+      </div>
+      <div class="middle-section">
+        <input type="text" class="search-bar" placeholder="Search" />
+        <button class="search-button">
+          <img src="icons/search.svg" class="search-icon" alt="" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img
+            src="icons/voice-search-icon.svg"
+            class="voice-search-icon"
+            alt=""
+          />
+          <div class="tooltip">Search with ur vioce</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img src="icons/upload.svg" alt="" class="upload-icon" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img src="icons/youtube-apps.svg" alt="" class="youtube-apps-icon" />
+          <div class="tooltip">Youtube Apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img
+            src="icons/notifications.svg"
+            alt=""
+            class="notifications-icon"
+          />
+          <div class="tooltip">Notifications</div>
+        </div>
+
+        <img
+          src="profile-pictures/sunnyjoe.jpg"
+          alt=""
+          class="current-profile-picture"
+        />
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" alt="" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" alt="" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="" />
+        <div>Youtube music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" alt="" />
+        <div>Library</div>
+      </div>
+    </div>
+
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="./videos page/video-1.html">
+            <img
+              src="images/vlcsnap-2024-07-19-20h06m22s670.png"
+              alt=""
+              class="thumbnails"
+            />
+            <div class="video-time">48:16</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img src="profile-pictures/baBombBlue.gif" alt="" class="picture" />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baBombBlue.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Bombblue</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="./videos page/video-1.html">
+              <p class="video-title">
+                JavaScript Tutorial for Beginners_ Learn JavaScript in 1 Hour
+              </p>
+            </a>
+            <p class="video-author">Mosh Hamedani</p>
+            <p class="video-stats">1.2M views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="videos page/video-2.html">
+            <img
+              src="images/vlcsnap-2024-07-24-14h02m06s181.png"
+              alt=""
+              class="thumbnails"
+            />
+            <div class="video-time">3:11:06</div></a
+          >
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img
+              src="profile-pictures/baAccuracyBlue.gif"
+              alt=""
+              class="picture"
+            />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baAccuracyBlue.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Accuracy Blue</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="videos page/video-2.html">
+              <p class="video-title">20 Beginners python project</p></a
+            >
+            <p class="video-author">freecodecamp</p>
+            <p class="video-stats">2.8M views &#183; 7 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="videos page/video-3.html">
+            <img
+              src="images/vlcsnap-2024-07-24-19h04m43s599.png"
+              alt=""
+              class="thumbnails"
+            />
+            <div class="video-time">3:07:01</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img
+              src="profile-pictures/baAccuracyPurple.gif"
+              alt=""
+              class="picture"
+            />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baAccuracyPurple.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Accuracy Purple</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="videos page/video-3.html">
+              <p class="video-title">Photoshop for Beginners _ FREE COURSE</p>
+            </a>
+            <p class="video-author">Dan Scott</p>
+            <p class="video-stats">2M views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="videos page/video-4.html">
+            <img
+              src="images/vlcsnap-2024-07-24-19h05m56s375.png"
+              alt=""
+              class="thumbnails"
+            />
+            <div class="video-time">11:52:05</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img
+              src="profile-pictures/baBackwardsBlue.gif"
+              alt=""
+              class="picture"
+            />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baBackwardsBlue.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Backwards Blue</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="videos page/video-4.html">
+              <p class="video-title">
+                Python Full Course - Learn Python in 12 Hours _ Python for
+                Beginners [Full Course - 2023] _ Edureka
+              </p>
+            </a>
+            <p class="video-author">Edureka</p>
+            <p class="video-stats">3.1M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="videos page/video-5.html">
+            <img
+              src="images/vlcsnap-2024-07-24-19h24m49s426.png"
+              alt=""
+              class="thumbnails"
+            />
+            <div class="video-time">6:14:06</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img
+              src="profile-pictures/baBombPurple.gif"
+              alt=""
+              class="picture"
+            />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baBombPurple.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Bomb Purple</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="videos page/video-5.html">
+              <p class="video-title">
+                Python Tutorial - Python Full Course for Beginners
+              </p>
+            </a>
+            <p class="video-author">Mosh Hamedani</p>
+            <p class="video-stats">6.7M views &#183; 7 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="videos page/video-6.html">
+            <img
+              src="images/vlcsnap-2024-07-24-19h26m13s309.png"
+              alt=""
+              class="thumbnails"
+            />
+            <div class="video-time">48:16</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img
+              src="profile-pictures/baSlowGreen.gif"
+              alt=""
+              class="picture"
+            />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baSlowGreen.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Slow Green</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="videos page/video-6.html">
+              <p class="video-title">
+                C++ Tutorial for Beginners - Full Course
+              </p>
+            </a>
+            <p class="video-author">Giraffe Academy</p>
+            <p class="video-stats">5.2M views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="videos page/video-7.html">
+            <img
+              src="images/vlcsnap-2024-07-24-19h28m19s480.png"
+              alt=""
+              class="thumbnails"
+            />
+            <div class="video-time">11:30:52</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img
+              src="profile-pictures/baBombGreen.gif"
+              alt=""
+              class="picture"
+            />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baBombGreen.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Bomb Green</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="videos page/video-7.html">
+              <p class="video-title">
+                Learn HTML5 and CSS3 From Scratch - Full Course
+              </p>
+            </a>
+            <p class="video-author">John Smilga</p>
+            <p class="video-stats">7.2M views &#183; 9 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="videos page/video-8.html">
+            <img
+              src="images/vlcsnap-2024-07-24-19h29m11s559.png"
+              alt=""
+              class="thumbnails"
+            />
+            <div class="video-time">11:48</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img src="profile-pictures/baSlowBlue.gif" alt="" class="picture" />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baSlowBlue.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Slow Blue</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="videos page/video-8.html">
+              <p class="video-title">
+                Jonah and the Whale _ Stories of God I Animated Children's Bible
+                Stories _ Bedtime Stories For Kids
+              </p>
+            </a>
+            <p class="video-author">Geetanjali</p>
+            <p class="video-stats">5M views &#183; 8 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="videos page/video-9.html">
+            <img
+              src="images/vlcsnap-2024-07-24-21h36m20s686.png"
+              alt=""
+              class="thumbnails"
+            />
+            <div class="video-time">1:09:33</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img
+              src="profile-pictures/baBackwardsPurple.gif"
+              alt=""
+              class="picture"
+            />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baBackwardsPurple.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Backwards Purple</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="videos page/video-9.html">
+              <p class="video-title">
+                HTML Tutorial for Beginners_ HTML Crash Course [2021]
+              </p>
+            </a>
+            <p class="video-author">Mosh Hamedani</p>
+            <p class="video-stats">8.1M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="videos page/video-10.html">
+            <img
+              src="images/vlcsnap-2024-07-24-21h37m00s648.png"
+              alt=""
+              class="thumbnails"
+            />
+            <div class="video-time">6:31:23</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img
+              src="profile-pictures/baSlowPurple.gif"
+              alt=""
+              class="picture"
+            />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baSlowPurple.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Slow Purple</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="videos page/video-10.html">
+              <p class="video-title">
+                HTML & CSS Full Course - Beginner to Pro (2022)
+              </p>
+            </a>
+            <p class="video-author">Supersimpledev</p>
+            <p class="video-stats">7.5M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            src="images/vlcsnap-2024-07-24-21h45m20s694.png"
+            alt=""
+            class="thumbnails"
+          />
+          <div class="video-time">4:26:51</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img
+              src="profile-pictures/baAccuracyGreen.gif"
+              alt=""
+              class="picture"
+            />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baAccuracyGreen.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Accuracy Green</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Learn Python - Full Course for Beginners [Tutorial]
+            </p>
+            <p class="video-author">Giraffe Academy</p>
+            <p class="video-stats">780k views &#183; 9 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            src="images/Screenshot 2024-07-24 214359.png"
+            alt=""
+            class="thumbnails"
+          />
+          <div class="video-time">3:26:42</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <img
+              src="profile-pictures/baBackwardsGreen.gif"
+              alt=""
+              class="picture"
+            />
+            <div class="info-profile-picture">
+              <div class="info-picture">
+                <img
+                  src="profile-pictures/baBackwardsGreen.gif"
+                  alt=""
+                  class="picture-2"
+                />
+              </div>
+              <div class="info-content">
+                <p class="info-title">Backwards Green</p>
+                <p class="info-stats">12m subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Learn JavaScript - Full Course for Beginners
+            </p>
+            <p class="video-author">freecodecamp</p>
+            <p class="video-stats">920k views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
